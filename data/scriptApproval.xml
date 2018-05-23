@@ -3,9 +3,17 @@
   <approvedScriptHashes>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
   </approvedScriptHashes>
-  <approvedSignatures>
-    <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getAt java.lang.Object java.lang.String</string>
-  </approvedSignatures>
+    <approvedSignatures>
+        <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
+        <string>method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object</string>
+        <string>method hudson.model.Run getCauses</string>
+        <string>method org.jenkinsci.plugins.workflow.steps.FlowInterruptedException getCauses</string>
+        <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
+        <string>method org.jenkinsci.plugins.workflow.support.steps.input.Rejection getUser</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getAt java.lang.Object java.lang.String</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods minus java.lang.String java.lang.Object</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods putAt java.lang.Object java.lang.String java.lang.Object</string>
+    </approvedSignatures>
   <aclApprovedSignatures/>
   <approvedClasspathEntries/>
   <pendingScripts/>
