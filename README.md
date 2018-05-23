@@ -42,3 +42,15 @@ these will now be available to be executed with your pipeline
 ```
 docker run --rm --name jenkins_local -p 8080:8080 -v ${pwd}:/var/projects/ -v /home/someuser/github/myutils:/var/utils/ -v /var/run/docker.sock:/var/run/docker.sock mskjeret/jenkins-local:latest
 ```
+
+
+## Build with parameters
+
+If your build contain parameters you need to run one build before jenkins picks up the parameters. This is the same as it is when running the full-blown release.
+
+
+## TODO
+
+Things that should be looked into:
+
+- Try to store added credentials outside of containers so there is no need to add them everytime the server is restarted
