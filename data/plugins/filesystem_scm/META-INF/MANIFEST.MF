@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nenashev
+Build-Jdk: 1.8.0_121
+Extension-Name: filesystem_scm
+Specification-Title: Using File System as SCM, done by checking file s
+ ystem last modified date.
+Implementation-Title: filesystem_scm
+Implementation-Version: 2.1
+Group-Id: hudson.plugins.filesystem_scm
+Short-Name: filesystem_scm
+Long-Name: Jenkins File System SCM Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/File+System+SCM
+Plugin-Version: 2.1
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: structs:1.5
+Plugin-Developers: Sam NG:samngms:samngms@yahoo.com,Christoph Kutzinsk
+ i:kutzi:kutzi@gmx.de,Oleg Nenashev:oleg_nenashev:o.v.nenashev@gmail.com
+
