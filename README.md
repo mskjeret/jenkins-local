@@ -40,5 +40,5 @@ these will now be available to be executed with your pipeline
 
 ## Full command
 ```
-docker run --rm --name jenkins_local -p 8080:8080 -v ${pwd}:/var/projects/ -v /home/someuser/github/myutils:/var/utils/ -v /var/run/docker.sock:/var/run/docker.sock mskjeret/jenkins-local:0.0.1
+docker run --rm --name jenkins_local -p 8080:8080 -v ${pwd}:/var/projects/ -v /home/someuser/github/myutils:/var/utils/ -v /var/run/docker.sock:/var/run/docker.sock mskjeret/jenkins-local:latest
 ```
