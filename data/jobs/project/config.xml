@@ -1,22 +1,24 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.21">
-  <actions>
-    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@2.19">
-      <jobPropertyDescriptors>
-        <string>hudson.model.ParametersDefinitionProperty</string>
-      </jobPropertyDescriptors>
-    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
-  </actions>
-  <description></description>
-  <keepDependencies>false</keepDependencies>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.53">
-    <scm class="hudson.plugins.filesystem_scm.FSSCM" plugin="filesystem_scm@2.1">
-      <path>/var/projects</path>
-      <clearWorkspace>false</clearWorkspace>
-    </scm>
-    <scriptPath>Jenkinsfile</scriptPath>
-    <lightweight>true</lightweight>
-  </definition>
-  <triggers/>
-  <disabled>false</disabled>
+    <actions>
+        <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@2.19">
+            <jobPropertyDescriptors>
+                <string>hudson.model.ParametersDefinitionProperty</string>
+            </jobPropertyDescriptors>
+        </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
+    </actions>
+    <description></description>
+    <keepDependencies>false</keepDependencies>
+    <properties/>
+    <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.53">
+        <scm class="hudson.plugins.filesystem_scm.FSSCM" plugin="filesystem_scm@2.1">
+            <path>/var/projects</path>
+            <clearWorkspace>false</clearWorkspace>
+            <copyHidden>true</copyHidden>
+        </scm>
+        <scriptPath>Jenkinsfile</scriptPath>
+        <lightweight>true</lightweight>
+    </definition>
+    <triggers/>
+    <disabled>false</disabled>
 </flow-definition>
