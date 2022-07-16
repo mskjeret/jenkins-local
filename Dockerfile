@@ -16,4 +16,4 @@ RUN chmod ugo+x /usr/local/bin/entrypoint.sh
 # drop back to the regular jenkins
 USER jenkins
 
-ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/entrypoint.sh"]
