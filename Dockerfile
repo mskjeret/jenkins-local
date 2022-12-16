@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:jdk11
+FROM jenkins/jenkins:2.375.1-jdk11
 
 USER root
 COPY data/ /var/jenkins_home/
